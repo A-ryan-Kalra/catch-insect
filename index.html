@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch Insect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Insect</h1>
+      <button class="play-game">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>What is your "Favorite" insect?</h1>
+      <ul class="all-insects">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img
+              draggable="false"
+              src="http://pngimg.com/uploads/fly/fly_PNG3946.png"
+              alt="fly"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Mosquito</p>
+            <img
+              draggable="false"
+              src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+              alt="mosquito"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Roach</p>
+            <img
+              draggable="false"
+              src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+              alt="Roach"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img
+              draggable="false"
+              src="http://pngimg.com/uploads/fly/fly_PNG3946.png"
+              alt="fly"
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="screen" id="game-container">
+      <h3 id="time">Time: 00:00</h3>
+      <h3 id="score">Score: 0</h3>
+      <p class="message visible">
+        Are you annoyed yet? <br />
+        You are doing well so far!
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
