@@ -22,6 +22,7 @@ body {
   text-align: center;
   height: 100vh;
   width: 100vw;
+  transition: margin-top 0.4s ease;
 }
 
 .screen .all-insects .choose-insect-btn img {
@@ -77,7 +78,7 @@ body {
   opacity: 1;
 }
 .screen.up {
-  margin-top: -200vh;
+  margin-top: -100vh;
 }
 
 .screen .play-game {
@@ -98,4 +99,37 @@ body {
 #score {
   top: 5%;
   right: 20px;
+}
+.insect {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(1);
+  animation: rotateInsect 20s forwards infinite;
+  transition: transform 0.3s ease-in-out;
+}
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+@keyframes rotateInsect {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 1230deg;
+  }
+}
+
+.insect img {
+  width: 100px;
+  height: 100px;
+  animation: rotateInsect 20s forwards infinite;
+}
+
+#game-container {
+  position: relative;
 }
